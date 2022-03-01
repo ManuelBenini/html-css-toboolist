@@ -1,5 +1,47 @@
+/* generic */
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body{
+  background-color: #f6f8f9;
+}
+
+header, main{
+  background-color: white;
+}
+
+/* header */
+header{
+  height: 80px;
+}
+
+header .logo img{
+  margin: 15px 0 0 15px;
+}
+
+h1{
+  display: inline-block;
+  height: 50px;
+}
+
+/* main */
+
+.container{
+  height: 500px;
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+main .top-section{
+  border-bottom: 1px solid #f6f8f9;
+}
+
+.actions{
+  padding: 5px 5px;
 }
