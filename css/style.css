@@ -8,6 +8,7 @@
 
 body{
   background-color: #f6f8f9;
+  font-family: 'Roboto', sans-serif;
 }
 
 header, main{
@@ -20,15 +21,17 @@ header, main{
 
 header{
   height: 80px;
+  padding: 15px;
 }
 
 header .logo img{
-  margin: 15px 0 0 15px;
+  vertical-align: middle;
 }
 
 header h1{
   display: inline-block;
   font-size: 45px;
+  vertical-align: middle;
 }
 
 
