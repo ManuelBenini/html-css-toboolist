@@ -9,7 +9,6 @@
 </head>
 <body>
 
-  
   <header>
     <div class="logo">
       <img src="/img/Logo.png" alt="logo toboolist">
@@ -17,32 +16,71 @@
     </div>
   </header>
 
-  <main class="container">
+  <main class="container-top">
     <div class="top-section">
-      <input type="button" value="Add Task" class="actions"> 
-      <input type="button" value="Add Section" class="actions">
+      <input type="button" value="Add Task" class="button task"> 
+      <input type="button" value="Add Section" class="button section">
     </div>
-    <hr>
 
-    <section>
-      <h3>New task</h3>
-      <p>Quarterly Newsletter <span>Editorial</span></p>
+    <!-- tasks -->
+    <section class="container-middle">
+      <div class="task-history">
+        <h3>&#9662;New task</h3>
+        <p> 
+          <span class="check positive">&#10004;</span> Quarterly Newsletter
+          <span class="editorial category">Editorial</span>
+        </p>
+      </div>
 
-      <h3>Today</h3>
-      <p>Recruiting blog post<span>Editorial</span></p>
-      <p>Mobile app launch<span>Q1 Goals</span></p>
-      <p>Interview John H.<span>Recruiting</span></p>
-      <p>Summit update to mobile storefronts <span>Mobile</span></p>
+      <div class="task-history">
+        <h3>&#9662;Today</h3>
+        <p>
+          <span class="check positive">&#10004;</span> Recruiting blog post
+          <span class="editorial category">Editorial</span>
+        </p>
 
-      <h3>Upcoming</h3>
-      <p>Schedule meeting with Alex</p>
-      <p>Homepage refresh<span>Website</span></p>
-      <p>Onboard new Sales team members<span>Sales</span></p>
-      <p>Review editorial calendar<span>Editorial</span></p>
+        <p>
+          <span class="check positive">&#10004;</span> Mobile app launch
+          <span class="goals category">Q1 Goals</span>
+        </p>
+
+        <p>
+          <span class="check negative">&#10005;</span> Interview John H.
+          <span class="recruiting category">Recruiting</span>
+        </p>
+
+        <p>
+          <span class="check positive">&#10004;</span>Summit update to mobile storefronts
+          <span class="mobile category">Mobile</span>
+        </p>
+      </div>
+
+      <div class="task-history">
+        <h3>&#9662;Upcoming</h3>
+        <p>
+          <span class="check negative">&#10005;</span> Schedule meeting with Alex
+        </p>
+
+        <p>
+          <span class="check positive">&#10004;</span> Homepage refresh
+          <span class="website category">Website</span>
+        </p>
+
+        <p>
+          <span class="check positive">&#10004;</span>Onboard new Sales team members
+          <span class="sales category">Sales</span>
+        </p>
+
+        <p>
+          <span class="check positive">&#10004;</span>Review editorial calendar
+          <span class="editorial category">Editorial</span>
+        </p>
+      </div>
+
     </section>
+    <!-- /tasks -->
 
   </main>
-
 
 </body>
 </html>

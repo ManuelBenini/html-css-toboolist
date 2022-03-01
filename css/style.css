@@ -14,7 +14,10 @@ header, main{
   background-color: white;
 }
 
+
+
 /* header */
+
 header{
   height: 80px;
 }
@@ -23,25 +26,110 @@ header .logo img{
   margin: 15px 0 0 15px;
 }
 
-h1{
+header h1{
   display: inline-block;
-  height: 50px;
+  font-size: 45px;
 }
+
+
 
 /* main */
 
-.container{
-  height: 500px;
+.container-top{
+  height: 550px;
   width: 80%;
   margin: 50px auto;
   border-radius: 10px;
-  padding: 30px;
 }
 
 main .top-section{
-  border-bottom: 1px solid #f6f8f9;
+  border-bottom: 3px solid #f6f8f9;
 }
 
-.actions{
-  padding: 5px 5px;
+main .button{
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1px solid;
+}
+
+main .button.task{
+  background-color: #47adf1;;
+  border-color: #47adf1;
+  color: white;
+  margin: 10px 0 10px 30px;
+}
+
+main .button.section{
+  background-color: white;
+  border-color: #c5cbd0;
+  color: #c5cbd0;
+}
+
+
+/* main-section */
+
+main .container-middle{
+  padding: 5px 30px;
+}
+
+main section .task-history{
+  margin-top: 20px;
+}
+
+main section p{
+  margin: 5px 0 15px 0;
+}
+
+main section .check{
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 15px;
+  font-size: 12px;
+  margin-right: 5px;
+}
+
+main section .check.positive{
+  color: #92d4c6;
+  border-color: #92d4c6;
+}
+
+main section .check.negative{
+  color: #e7372f;
+  border-color: #e7372f;
+}
+
+main section .category{
+  color: white;
+  display: inline-block;
+  font-size: 12px;
+  padding: 5px 7px;
+  border-radius: 15px;
+}
+
+main section .editorial.category{
+  background-color: #45abea;
+}
+
+main section .goals.category{
+  background-color: #9c72e4
+}
+
+main section .recruiting.category{
+  background-color: #64c0a9
+}
+
+main section .mobile.category{
+  background-color: #f29e33
+}
+
+main section .website.category{
+  background-color: #d863a1
+}
+
+main section .sales.category{
+  background-color: #b0c926
 }
