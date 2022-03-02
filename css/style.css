@@ -1,4 +1,6 @@
-/* generic */
+/* 
+  generic 
+*/
 
 *{
   margin: 0;
@@ -15,97 +17,114 @@ header, main{
   background-color: white;
 }
 
+main .btn{
+  padding: 3px 8px;
+  border-radius: 5px;
+  border: 1px solid;
+}
 
 
-/* header */
+
+/* 
+  header 
+*/
 
 header{
   height: 80px;
   padding: 15px;
+  margin-bottom: 50px;
 }
 
-header .logo img{
+header img{
   vertical-align: middle;
 }
 
-header h1{
-  display: inline-block;
+header #logo-name{
   font-size: 45px;
   vertical-align: middle;
 }
 
 
 
-/* main */
+/* 
+  main 
+*/
 
 .container-top{
   height: 550px;
   width: 80%;
-  margin: 50px auto;
+  min-width: 700px;
+  margin: 0px auto;
   border-radius: 10px;
 }
 
 main .top-section{
+  padding: 20px 30px;  
   border-bottom: 3px solid #f6f8f9;
 }
 
-main .button{
-  padding: 3px 8px;
-  border-radius: 5px;
-  border: 1px solid;
-}
-
-main .button.task{
+main .btn.task{
   background-color: #47adf1;;
   border-color: #47adf1;
   color: white;
-  margin: 10px 0 10px 30px;
 }
 
-main .button.section{
+main .btn.section{
   background-color: white;
   border-color: #c5cbd0;
   color: #c5cbd0;
 }
 
 
-/* main-section */
+
+/* 
+  main-section 
+*/
 
 main .container-middle{
-  padding: 5px 30px;
+  padding: 0px 30px;
 }
 
 main section .task-history{
-  margin-top: 20px;
+  list-style-type: none;
+  margin-top: 30px;
 }
 
-main section p{
-  margin: 5px 0 15px 0;
+main section ul h3::before{
+  content: '\25BE';
 }
 
-main section .check{
-  display: inline-block;
-  height: 15px;
-  width: 15px;
-  border: 1px solid;
+main section ul li:nth-child(1n){
+  margin-top: 10px;
+}
+
+main section ul li .check-positive::after{
+  content: '\2714';
+  color: #92d4c6;
+  border: 1px solid #92d4c6;
   border-radius: 50%;
-  text-align: center;
-  line-height: 15px;
   font-size: 12px;
   margin-right: 5px;
+  padding: 1px;
 }
 
-main section .check.positive{
-  color: #92d4c6;
-  border-color: #92d4c6;
-}
-
-main section .check.negative{
+main section ul li .check-negative::after{
+  content: '\2715';
   color: #e7372f;
-  border-color: #e7372f;
+  border: 1px solid #e7372f;
+  border-radius: 50%;
+  font-size: 11px;
+  margin-right: 5px;
+  padding: 1px;
 }
 
-main section .category{
+
+
+/*
+  tags 
+*/
+
+main section ul li .tag{
   color: white;
   display: inline-block;
   font-size: 12px;
@@ -113,26 +132,26 @@ main section .category{
   border-radius: 15px;
 }
 
-main section .editorial.category{
+main section ul li .editorial.tag{
   background-color: #45abea;
 }
 
-main section .goals.category{
+main section ul li .goals.tag{
   background-color: #9c72e4
 }
 
-main section .recruiting.category{
+main section ul li .recruiting.tag{
   background-color: #64c0a9
 }
 
-main section .mobile.category{
+main section ul li .mobile.tag{
   background-color: #f29e33
 }
 
-main section .website.category{
+main section ul li .website.tag{
   background-color: #d863a1
 }
 
-main section .sales.category{
+main section ul li .sales.tag{
   background-color: #b0c926
 }
