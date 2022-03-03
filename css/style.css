@@ -17,7 +17,7 @@ header, main{
   background-color: white;
 }
 
-main .btn{
+.btn{
   padding: 3px 8px;
   border-radius: 5px;
   border: 1px solid;
@@ -35,13 +35,12 @@ header{
   margin-bottom: 50px;
 }
 
-header img{
+header img, #logo-name{
   vertical-align: middle;
 }
 
 header #logo-name{
   font-size: 45px;
-  vertical-align: middle;
 }
 
 
@@ -51,7 +50,6 @@ header #logo-name{
 */
 
 .container-top{
-  height: 550px;
   width: 80%;
   min-width: 700px;
   margin: 0px auto;
@@ -98,6 +96,9 @@ main section ul li:nth-child(1n){
   margin-top: 10px;
 }
 
+
+
+/* Non so come dare gli stessi attributi allo uno pseudo-selettore ::after, ovviamente classi ed altra roba non funziona perchè il tutto viene creato in quel momento dal css.. o mi sbaglio? */
 main section ul li .check-positive::after{
   content: '\2714';
   color: #92d4c6;
